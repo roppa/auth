@@ -2,6 +2,10 @@
   "name": "auth",
   "version": "1.0.0",
   "description": "Example auth app using jsonwebtoken (jwt)",
+  "repository" :{
+    "type" : "git",
+    "url" : "https://github.com/roppa/auth"
+  },
   "main": "index.js",
   "scripts": {
     "test": "mocha"
