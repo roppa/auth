@@ -32,8 +32,7 @@ let auth = {
     if (token) {
       jwt.verify(token, process.env.SECRET, function (error, decoded) {
         if (error) {
-          //redirect and set to 403
-          return res.json({ erroror: { message: 'Failed to authenticate token.' } });
+          return res.status(403).json({ erroror: { message: 'Failed to authenticate token.' } });
         } else {
           req.decoded = decoded;
           next();

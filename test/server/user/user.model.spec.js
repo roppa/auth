@@ -9,9 +9,7 @@ describe('User model', () => {
 
   before(done => {
     mockgoose(mongoose).then(() => {
-      mongoose.connect(process.env.DB_HOST, (err) => {
-        done(err);
-      });
+      done();
     });
   });
 

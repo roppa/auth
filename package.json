@@ -6,7 +6,7 @@
     "type" : "git",
     "url" : "https://github.com/roppa/auth"
   },
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha"
   },

@@ -8,4 +8,4 @@ app.set('view engine', 'ejs');
 
 require('./server/middleware')(app);
 
-app.listen(process.env.PORT);
+module.exports = app;
